@@ -16,3 +16,9 @@ class User:
   @property
   def user_address(self):
     return self.user_name + " lives at " + self.address
+  
+def func(*args):
+  for i in args:
+    result=i*i
+    return result
+print(func([1,2,3,4,5,6,7,8,89]))
