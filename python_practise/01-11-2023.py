@@ -112,13 +112,13 @@ obj3=Employee()
 obj3.add()
 print(obj3.total)
         
-    def display(self):
-        print(self.name)
-        print(self.idnumber)
-        
-    def detail(self):
-        print(f"my name is {self.name}")
-        print(f"my idnumber is {self.idnumber}")
+def display(self):
+    print(self.name)
+    print(self.idnumber)
+    
+def detail(self):
+    print(f"my name is {self.name}")
+    print(f"my idnumber is {self.idnumber}")
         
 class Employee(Person):
     def __init__(self,name,idnumber,salary,post):
@@ -172,8 +172,8 @@ print(obj1.make_sound())
 
 
     
-    def make_sound(self):
-        return f"hello{self.name}"
+def make_sound(self):
+    return f"hello{self.name}"
 
 class Dog(Animal):
     def make_sound(self):
@@ -189,7 +189,8 @@ obj2=Cat("Whisker")
 
 
 
-print(func(obj1))
+
+
 
 class Base:
     def __init__(self):
