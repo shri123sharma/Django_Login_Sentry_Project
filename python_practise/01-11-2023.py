@@ -112,7 +112,7 @@
 # obj3.add()
 # print(obj3.total)
 
-#inheritance example 
+
 # class Person:
 #     def __init__(self,name,idnumber):
 #         self.name=name
@@ -159,90 +159,182 @@
 # obj1=Animal("shrikant")
 # print(obj1.make_sound())
 
-class Animal:
-    def __init__(self,name):
-        self.name=name
+# class Animal:
+#     def __init__(self,name):
+#         self.name=name
     
-    def make_sound(self):
-        return f"hello{self.name}"
+#     def make_sound(self):
+#         return f"hello{self.name}"
 
-class Dog(Animal):
-    def make_sound(self):
-        return f"{self.name} says Woof!"
+# class Dog(Animal):
+#     def make_sound(self):
+#         return f"{self.name} says Woof!"
     
-class Cat(Animal):
-    def make_sound(self):
-        return f"{self.name} says meow!"
+# class Cat(Animal):
+#     def make_sound(self):
+#         return f"{self.name} says meow!"
     
     
-obj1=Dog("buddy")
-obj2=Cat("Whisker")
+# obj1=Dog("buddy")
+# obj2=Cat("Whisker")
 
-def func(val):
-    return val.make_sound()
+# def func(val):
+#     return val.make_sound()
 
-print(func(obj1))
+# print(func(obj1))
 
-class Base:
-    def __init__(self):
-        self.a="geeks"
-        self.__c="hello"
+# class Base:
+#     def __init__(self):
+#         self.a="geeks"
+#         self.__c="hello"
         
-class Derived(Base):
-    def __init__(self):
-        Base.__init__(self)
-        print(self.__c)
+# class Derived(Base):
+#     def __init__(self):
+#         Base.__init__(self)
+#         print(self.__c)
         
-obj1=Base()
-print(obj1.a)
+# obj1=Base()
+# print(obj1.a)
 
 
-class Student:
-    def __init__(self):
-        self.__name="shrikant"
-        self.__age=23
+# class Student:
+#     def __init__(self):
+#         self.__name="shrikant"
+#         self.__age=23
 
-    def get_name(self):
-        return f"{self.__name} is called"
+#     def get_name(self):
+#         return f"{self.__name} is called"
     
-    def set_name(self,name):
-        if len(name)>0:
-            self.__name=name
+#     def set_name(self,name):
+#         if len(name)>0:
+#             self.__name=name
             
-    def get_age(self):
-        return f"{self.__age} is called"
+#     def get_age(self):
+#         return f"{self.__age} is called"
     
-    def set_age(self,age):
-        if age>0:
-            self.__age=age
+#     def set_age(self,age):
+#         if age>0:
+#             self.__age=age
             
-obj1=Student()
-print(obj1.get_name())
-print(obj1.set_name("arun"))
-print(obj1.get_name())
+# obj1=Student()
+# print(obj1.get_name())
+# print(obj1.set_name("arun"))
+# print(obj1.get_name())
 
 
-class OldClass:
-    def __init__(self,name):
-        print(f"i am instance variable{name}")
+# class OldClass:
+#     def __init__(self,name):
+#         print(f"i am instance variable{name}")
         
-class NewClass:
-    def __init__(self):
-        print("i am old instance variable")
+# class NewClass:
+#     def __init__(self):
+#         print("i am old instance variable")
         
-OldClass("hello")
-NewClass()
+# OldClass("hello")
+# NewClass()
 
 
-class GetTest:
-    def __init__(self):
-        print("Greetings")
+# class GetTest:
+#     def __init__(self):
+#         print("Greetings")
         
-    def get_value(self):
-        print("i am another method which is used to more get_value method")
+#     def get_value(self):
+#         print("i am another method which is used to more get_value method")
         
-obj1=GetTest()
-obj1.get_value()
+# obj1=GetTest()
+# obj1.get_value()
 
+# a=10
+# b=str(0)
+# for i in b:
+#     print(i)
+
+# def printFibb(n):
+#         a,b=0,1
+#         for i in range(1,n+1):
+#             a,b=b,a+b
+#             print(a)
+    
+# printFibb(7)
+
+# def Maximize(a:list, n:int): 
+#         value=0
+#         s1=sorted(a)
+#         print(s1)
+#         for i in s1:
+#             index=s1.index(i)
+#             result=i*index
+#             value+=result
+#             print(value)
+#         # return result
+
+# a = [5, 3, 2, 4, 1]
+# a=[1,2,3]
+# a=[6,6,8,19,8,10,19,14,20,18,5,11,20,6,10,7,15,8,8,9]
+# n=20
+# Maximize(a,n)
+
+
+# def Maximize1(a:list,n:int):
+#     value=0
+#     s1=sorted(a)
+#     for i in range(0,len(s1)): 
+#         result=s1[i]*i
+#         value+=result
+#     return value
+# a=[6,6,8,19,8,10,19,14,20,18,5,11,20,6,10,7,15,8,8,9]
+# n=20
+# print(Maximize1(a,n))
+
+# Input: nums = [3,2,3]
+# Output: 3
+
+
+ls1=[10,434,434,4,6578,78,3323,5468,79,21213354]
+# for i in range(0,len(ls1)):
+#     for j in range(i+1,len(ls1)):
+#         if ls1[i]>ls1[j]:
+#             ls1[i],ls1[j]=ls1[j],ls1[i]
+# print(ls1)
+
+# for i in range(0,len(ls1)):
+#     val=range(i+1,len(ls1))
+#     if ls1[i]>ls1[val]:
+#         ls1[i],ls1[val]=ls1[val],ls1[i]
+# print(ls1)
+
+# N = 17
+# count = 0
+
+# if N <= 1:
+#     print("Not a prime number")
+# else:
+#     for i in range(2, N):
+#         if N % i == 0:
+#             count += 1
+
+# if count >= 1:
+#     print("Not a prime number")
+# else:
+#     print("Prime number")
+
+
+def isPrime (N):
+        count=0
+        if N<=1:
+            return 0
             
-
+        elif N<=2:
+            return 1
+            
+        else:
+            for i in range(2,N):
+                if N%i==0:
+                    count+=1
+        if count>=1:
+            return 0
+        else:  
+            return 1
+N=4
+print(isPrime(N))
+    
