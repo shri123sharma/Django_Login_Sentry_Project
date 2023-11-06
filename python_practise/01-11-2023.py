@@ -111,6 +111,29 @@
 # obj3=Employee()
 # obj3.add()
 # print(obj3.total)
+        
+# def display(self):
+#     print(self.name)
+#     print(self.idnumber)
+    
+# def detail(self):
+#     print(f"my name is {self.name}")
+#     print(f"my idnumber is {self.idnumber}")
+        
+# class Employee(Person):
+#     def __init__(self,name,idnumber,salary,post):
+#         self.salary=salary
+#         self.post=post
+        
+#         Person.__init__(self,name,idnumber)
+        
+#     def detail(self):
+#         print(f"My name is {self.name}")
+#         print(f"Idnumber is {self.idnumber}")
+#         print(f"post is {self.post}")
+        
+    
+
 
 
 # class Person:
@@ -138,19 +161,7 @@
 #         print(f"Idnumber is {self.idnumber}")
 #         print(f"post is {self.post}")
         
-    
-# obj1=Person("shri",33232)
-# print(obj1.name)
-# print(obj1.display())
-# print(obj1.detail())
-# obj2=Employee("rahul",32323,200000,"interns")
-# print(obj2.detail())
 
-# # polymorphism
-# class Animal():
-#     def __init__(self,name):
-#         self.name=name
-    
 #     def make_sound(self):
 #         pass
 # class Dog():
@@ -159,12 +170,10 @@
 # obj1=Animal("shrikant")
 # print(obj1.make_sound())
 
-# class Animal:
-#     def __init__(self,name):
-#         self.name=name
+
     
-#     def make_sound(self):
-#         return f"hello{self.name}"
+# def make_sound(self):
+#     return f"hello{self.name}"
 
 # class Dog(Animal):
 #     def make_sound(self):
@@ -178,10 +187,10 @@
 # obj1=Dog("buddy")
 # obj2=Cat("Whisker")
 
-# def func(val):
-#     return val.make_sound()
 
-# print(func(obj1))
+
+
+
 
 # class Base:
 #     def __init__(self):
@@ -240,20 +249,7 @@
         
 #     def get_value(self):
 #         print("i am another method which is used to more get_value method")
-        
-# obj1=GetTest()
-# obj1.get_value()
 
-# a=10
-# b=str(0)
-# for i in b:
-#     print(i)
-
-# def printFibb(n):
-#         a,b=0,1
-#         for i in range(1,n+1):
-#             a,b=b,a+b
-#             print(a)
     
 # printFibb(7)
 
@@ -290,7 +286,8 @@
 # Output: 3
 
 
-ls1=[10,434,434,4,6578,78,3323,5468,79,21213354]
+# ls1=[10,434,434,4,6578,78,3323,5468,79,21213354]
+
 # for i in range(0,len(ls1)):
 #     for j in range(i+1,len(ls1)):
 #         if ls1[i]>ls1[j]:
@@ -319,22 +316,62 @@ ls1=[10,434,434,4,6578,78,3323,5468,79,21213354]
 #     print("Prime number")
 
 
-def isPrime (N):
-        count=0
-        if N<=1:
-            return 0
+
+# def isPrime (N):
+#         count=0
+#         if N<=1:
+#             return 0
             
-        elif N<=2:
-            return 1
+#         elif N<=2:
+#             return 1
             
-        else:
-            for i in range(2,N):
-                if N%i==0:
-                    count+=1
-        if count>=1:
-            return 0
-        else:  
-            return 1
-N=4
-print(isPrime(N))
+#         else:
+#             for i in range(2,N):
+#                 if N%i==0:
+#                     count+=1
+#         if count>=1:
+#             return 0
+#         else:  
+#             return 1
+# N=9
+# print(isPrime(N))
+
+# def is_prime1(N):
+#     if N<=1:
+#         return 0
+#     for i in range(2,int(N**0.5)+1):
+#         if N%i==0:
+#             return 0
+#     return 1
+# N=9
+# print(is_prime1(N))
+# print(int(N**0.5)+1)
+
+# def func(A1,N):
+#     ls1=[]
+#     for i in range(N):
+#         if i<len(A1)-1:
+#             if A1[i]>A1[i+1]:
+#                 ls1.append(arr[i+1])
+#             elif A1[i]<A1[i+1]:
+#                 ls1.append(-1)
+#     ls1.append(-1)
+#     return ls1         
+# n=5
+# arr=[4,2,1,5,3]
+# n=6
+# arr=[5,6,2,3,1,7]
+# print(func(arr,n))
+
+# def func(s,x):
+#     if x in s:
+#         val=s.find(x)
+#         print(val)    
+#     else:
+#         print(-1)
+        
+# s="GeeksForGeeks"
+# x="For"
+# func(s,x)
+
     
