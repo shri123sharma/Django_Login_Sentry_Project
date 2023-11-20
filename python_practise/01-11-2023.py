@@ -333,6 +333,45 @@ def isPrime (N):
             return 0
         else:  
             return 1
-N=4
+N=9
 print(isPrime(N))
+
+def is_prime1(N):
+    if N<=1:
+        return 0
+    for i in range(2,int(N**0.5)+1):
+        if N%i==0:
+            return 0
+    return 1
+N=9
+print(is_prime1(N))
+print(int(N**0.5)+1)
+
+def func(A1,N):
+    ls1=[]
+    for i in range(N):
+        if i<len(A1)-1:
+            if A1[i]>A1[i+1]:
+                ls1.append(arr[i+1])
+            elif A1[i]<A1[i+1]:
+                ls1.append(-1)
+    ls1.append(-1)
+    return ls1         
+n=5
+arr=[4,2,1,5,3]
+n=6
+arr=[5,6,2,3,1,7]
+print(func(arr,n))
+
+def func(s,x):
+    if x in s:
+        val=s.find(x)
+        print(val)    
+    else:
+        print(-1)
+        
+s="GeeksForGeeks"
+x="For"
+func(s,x)
+
     
