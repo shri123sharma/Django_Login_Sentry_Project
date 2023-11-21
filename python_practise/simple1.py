@@ -11,3 +11,4 @@ def formatted_name(first_name, last_name, middle_name=''):
    return full_name.title()
 obj1=formatted_name('shrikant','sharma')
 print(obj1)
+
