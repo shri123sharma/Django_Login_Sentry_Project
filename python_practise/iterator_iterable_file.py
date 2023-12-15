@@ -62,7 +62,7 @@ print(next(expertises))
 other_cities = ["Strasbourg", "Freiburg", "Stuttgart", 
                 "Vienna / Wien", "Hannover", "Berlin", 
                 "Zurich"]
-import pdb;pdb.set_trace()
+
 other_cities=iter(other_cities)
 while other_cities:
     try:
